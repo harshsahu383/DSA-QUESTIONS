@@ -29,4 +29,4 @@ function maxWateR (heighT){
     }
     return maxwater;
 } 
-console.log(maxWateR(height));
+console.log(maxWateR(height))
