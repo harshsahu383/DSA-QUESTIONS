@@ -20,6 +20,7 @@ function searchInsertPosition(arr,target){
 }
 console.log(searchInsertPosition(arr,target));
 // With Binary Search Algorithm
+// both are accepted for leetcode
 function binarySearch(arr,target){
     let left = 0;
     let right = arr.length-1;
