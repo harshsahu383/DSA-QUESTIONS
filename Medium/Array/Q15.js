@@ -23,6 +23,7 @@
 // }
 // threeSum(arr);4
 // sorting with two pointer is optimal approach for solving this
+// this is not the best way but its efficient way to solve this types of problems
 /**
  * @param {number[]} nums
  * @return {number[][]}
