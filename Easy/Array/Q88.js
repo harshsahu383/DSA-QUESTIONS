@@ -24,3 +24,12 @@ function mergeArrays(nums1,m,nums2,n){
 
 };
 console.log(mergeArrays(nums1,m,nums2,n));
+// this is also an optimal approach
+var merge = function(nums1, m, nums2, n) {
+    nums1.length = m;
+    for(let j = 0; j<nums2.length;j++){
+        nums1.push(nums2[j]);
+    }
+    nums1.sort((a,b) => a -b);
+}
+//
