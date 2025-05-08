@@ -11,6 +11,6 @@ function majorityElement(nums) {
         }
         count += (num === candidate) ? 1 : -1;
     }
-
+;
     return candidate
 }
