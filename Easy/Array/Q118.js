@@ -1,21 +1,22 @@
 //Q118 the pascals traingle in the leet code 
 // Given an integer numRows, return the first numRows of Pascal's triangle.
 // In Pascal's triangle, each number is the sum of the two numbers directly above it as shown:
-var generate = function (numRows) {
-  const triangle = [];
 
-  for (let i = 0; i < numRows; i++) {
-    const row = [1];
+function numRows(num){
+  const traingle = [];
+  for(let i = 0;i<num;i++){
+    let rows=[];
+    for(let j = 0; j<=i;j++){
+       if (j === 0 || j === i) rows.push(1);
+       else{
 
-    for (let j = 1; j < i; j++) {
-      const val = triangle[i - 1][j - 1] + triangle[i - 1][j];
-      row.push(val);
+         let prevRow = traingle[i-1];
+         let sum = prevRow[j-1] + prevRow[j];
+         rows.push(1);
+        }
+
     }
-
-    if (i > 0) row.push(1);
-
-    triangle.push(row);
+    traingle.push(row);
   }
-
-  return triangle;
-};
+  return traingle;
+}
