@@ -10,32 +10,31 @@
 // Given an array of integers nums, find the next permutation of nums.
 
 // The replacement must be in place and use only constant extra memory.
-    
+// algortihm is used in this is smart greedy approach
     
     
     let i = nums.length - 2;
  function permutation(nums){
-    // Step 1: Find the first decreasing number from the right
-    while (i >= 0 && nums[i] >= nums[i + 1]) {
-        i--;
-    }
+        let pivot = nums.length-2;
 
-    // Step 2: If found, find the number just larger than nums[i] and swap
-    if (i >= 0) {
-        let j = nums.length - 1;
-        while (nums[j] <= nums[i]) {
+    while(pivot>=0 && nums[pivot]>=nums[pivot+1]){
+        pivot--;
+    }
+    if(pivot>=0){
+        let j = nums.length-1;
+        while(nums[j]<=nums[pivot]){
             j--;
         }
-        // Swap nums[i] and nums[j]
-        [nums[i], nums[j]] = [nums[j], nums[i]];
+    [nums[pivot] ,nums[j]] = [nums[j],nums[pivot]];
     }
-
-    // Step 3: Reverse the part after i
-    let left = i + 1;
-    let right = nums.length - 1;
-    while (left < right) {
-        [nums[left], nums[right]] = [nums[right], nums[left]];
+    let left = pivot+1;
+    let right = nums.length-1;
+    while(left<right){
+        [nums[left] ,nums[right]] = [nums[right],nums[left]];
         left++;
         right--;
     }
+
+
+
 };
