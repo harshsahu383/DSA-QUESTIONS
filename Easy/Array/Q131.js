@@ -19,5 +19,5 @@ function buyAndSellStock(prices){
     return maxProfit;
 
 }
-let prices = [7,1,2,3,4,5,];
+let prices = [7,1,2,3,4,5,6];
 console.log(buyAndSellStock(prices));
