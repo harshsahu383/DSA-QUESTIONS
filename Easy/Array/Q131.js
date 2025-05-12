@@ -21,3 +21,13 @@ function buyAndSellStock(prices){
 }
 let prices = [7,1,2,3,4,5,6];
 console.log(buyAndSellStock(prices));
+// using 0ms solution
+function buyAndSell(prices){
+    let buy = prices[0];
+    let sell = 0;
+    for(let i = 1;i<prices.length;i++){
+        buy = Math.min(buy,price[i]);
+        sell = Math.max(sell,price[i]-buy);
+    }
+    return sell;
+}
