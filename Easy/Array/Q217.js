@@ -9,3 +9,4 @@ function duplicate(nums){
     }
     return false;
 }
+//new set is dose not contain duplicates in array
