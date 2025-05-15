@@ -8,6 +8,7 @@ public class ReadChar {
         char s = sc.next().charAt(0);
         
         System.out.println("char is : " + s);
+       
         
     }
 }
