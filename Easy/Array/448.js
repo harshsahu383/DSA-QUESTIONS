@@ -12,5 +12,5 @@ var findDisappearedNumbers = function (nums) {
     n++;
   }
 
-  return result;
+  return result
 };
