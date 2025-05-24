@@ -4,6 +4,8 @@
 
 // Note that the returned array may be in any order.
 
+// Q2942 Strings
+
 var findWordsContaining = function (words, x) {
   let result = [];
   let i = 0;
