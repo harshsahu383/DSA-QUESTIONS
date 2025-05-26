@@ -7,9 +7,9 @@ var containsNearbyDuplicate = function (nums, k) {
     }
     seen.add(nums[i]);
     if (seen.size > k) {
-      seen.delete(nums[i - k])
+      seen.delete(nums[i - k]);
       
     }
   }
-  return false 
+  return false ;
 };
