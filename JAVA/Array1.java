@@ -1,4 +1,3 @@
-import java.util.*;
 public class Array1{
      static int[] find(int[] arr,int x){
         int count = 0,last = 0;
