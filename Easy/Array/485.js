@@ -15,4 +15,4 @@ for (let n of nums) {
     cur = 0
   }
 }
-return res;
+return res
