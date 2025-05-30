@@ -12,7 +12,7 @@ for (let n of nums) {
     cur++;
     res = Math.max(res, cur);
   } else {
-    cur = 0;
+    cur = 0
   }
 }
 return res;
