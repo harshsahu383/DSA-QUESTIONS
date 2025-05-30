@@ -2,6 +2,35 @@ import java.util.*;
 
 public class Arr {
    @SuppressWarnings("UnnecessaryContinue")
+   public static int secondMax(int [] arr){
+    int max = Integer.MIN_VALUE;
+    int second = 0;
+    for(int i = 0; i< arr.length;i++){
+        if(arr[i] > max){
+            max = arr[i];
+            second = max;
+        }
+    }
+    return second ;
+   }
+   public static int uniqueElment(int [] arr){
+    int unique = 0;
+    for(int i = 0;i<arr.length;i++){
+        for(int j = i+1;j<arr.length;j++){
+            if(arr[i] == arr[j]){
+                arr[i] = -1;
+                arr[j] = -1;
+            }
+           
+        }
+    }
+    for(int i = 0;i<arr.length;i++){
+        if(arr[i] != -1){
+            unique = arr[i] ;
+        }
+    }
+    return unique;
+   }
    public static int unique(int [] arr,int x){
     int result = 0;
     for(int i = 0; i < arr.length; i++){
@@ -43,7 +72,7 @@ public class Arr {
     }
 
     public static void main(String[] args) {
-    int [] arr = {0,1,2,3,4,1,2,3,0};
-    System.out.println(unique(arr, x));
+    int [] arr = {4,1,2,3,1,2,3};
+    System.out.println(secondMax(arr));
     }
 }
