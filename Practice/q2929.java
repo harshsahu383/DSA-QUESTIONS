@@ -5,6 +5,8 @@
  
 
 // Example 1:
+//brute force is applying to solve this problems
+
 
 // Input: n = 5, limit = 2
 // Output: 3
