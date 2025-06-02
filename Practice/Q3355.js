@@ -24,5 +24,5 @@ function findZero(nums){
         return false;
       }
     }
-    return true;
+    return true
 }
