@@ -22,7 +22,7 @@ function num(n){
   return max;
 }
 console.log(num(n));
-// this solution is run on 1ms time we have 0 ms time solutuon 
+// this solution is run on 1ms time we have 0 ms time or optimal solution
 // 0ms runtime //
 function digit(n){
      let max1 = 0;
