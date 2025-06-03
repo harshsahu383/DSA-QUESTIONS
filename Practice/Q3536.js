@@ -35,7 +35,7 @@ function digit(n){
         } else if (digit > max2) {
             max2 = digit;
         }
-        n = Math.floor(n / 10);
+        n = Math.floor(n / 10)
     }
-    return max1 * max2
+    return max1 * max2;
 }
