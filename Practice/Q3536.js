@@ -19,7 +19,7 @@ function num(n){
   }
   arr.sort((a,b)=> a-b);
   max = arr[arr.length-1] * arr[arr.length-2];
-  return max;
+  return max
 }
 console.log(num(n));
 // this solution is run on 1ms time we have 0 ms time or optimal solution
@@ -37,5 +37,5 @@ function digit(n){
         }
         n = Math.floor(n / 10)
     }
-    return max1 * max2;
+    return max1 * max2
 }
