@@ -26,7 +26,7 @@ console.log(num(n));
 // 0ms runtime //
 function digit(n){
      let max1 = 0;
-    let max2 = 0;
+    let max2 = 0
     while (n > 0) {
         let digit = n % 10;
         if (digit > max1) {
