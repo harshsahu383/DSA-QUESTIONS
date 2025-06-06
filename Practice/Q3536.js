@@ -28,7 +28,7 @@ function digit(n){
      let max1 = 0;
     let max2 = 0
     while (n > 0) {
-        let digit = n % 10;
+        let digit = n % 10
         if (digit > max1) {
             max2 = max1;
             max1 = digit;
