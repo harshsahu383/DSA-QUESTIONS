@@ -25,7 +25,7 @@ var clearStars = function (s) {
         } else {
             for (let j = 0; j < 26; j++) {
                 if (cnt[j].length > 0) {
-                    arr[cnt[j].pop()] = "*";
+                    arr[cnt[j].pop()] = "*"
                     break;
                 }
             }
