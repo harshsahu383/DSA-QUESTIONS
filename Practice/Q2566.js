@@ -28,8 +28,8 @@ var minMaxDifference = function (num) {
         pos++;
     }
     if (pos < s.length) {
-        s = s.replace(new RegExp(s[pos], "g"), "9")
+        s = s.replace(new RegExp(s[pos], "g"), "9");
     }
-    t = t.replace(new RegExp(t[0], "g"), "0")
+    t = t.replace(new RegExp(t[0], "g"), "0");
     return parseInt(s) - parseInt(t);
 };
