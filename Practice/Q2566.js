@@ -31,5 +31,5 @@ var minMaxDifference = function (num) {
         s = s.replace(new RegExp(s[pos], "g"), "9");
     }
     t = t.replace(new RegExp(t[0], "g"), "0");;
-    return parseInt(s) - parseInt(t)
+    return parseInt(s) - parseInt(t);
 };
