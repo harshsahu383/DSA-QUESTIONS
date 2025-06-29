@@ -19,4 +19,4 @@ var findKDistantIndices = function (nums, key, k) {
     }
   }
   return res;
-};
+}
