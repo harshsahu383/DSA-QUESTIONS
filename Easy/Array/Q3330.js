@@ -29,4 +29,4 @@ var possibleStringCount = function (word) {
         }
     }
     return ans;
-};
+}
